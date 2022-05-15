@@ -20,11 +20,9 @@ Gross salary:2,125
 """
 
 
-from unicodedata import name
-
-
 def flat_list(nested_list: list) -> list:
     return [y for x in nested_list for y in x]
+
 
 def teachers_salary():
     general_rate = 20
@@ -42,7 +40,8 @@ def teachers_salary():
         gross_salary = periods*general_rate
     return f'\nTeacher: {teachers_name},\nPeriods: {periods},\nGross Salary:{gross_salary:,}'
 
-if __name__ ==  '__main__':
+
+if __name__ == '__main__':
     # test
     print(flat_list([[2, 4, 5, 6]]))
     print(flat_list([[2, 4, 5, 6], [4, 5, 7, 8]]))
