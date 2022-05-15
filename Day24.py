@@ -14,7 +14,6 @@ def average_calories():
             calories.append(float(user_input))
         except ValueError:
             print('Please enter a valid calories value')
-    print(calories)
     return f'{sum(calories)/len(calories):.2f}'
 
 print(average_calories())
