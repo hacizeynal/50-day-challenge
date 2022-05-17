@@ -13,7 +13,7 @@ import random
 
 def guess_a_number():
     print('***GUESSING GAME***')
-    random_number = random.randrange(0, 100)  # generate number between
+    random_number = random.randrange(0, 10)  # generate number between
     total_chances = 3
     while total_chances:
         guess = int(input(f"You've {total_chances} {'chance'if total_chances==1 else 'chances'} Enter your guess: "))

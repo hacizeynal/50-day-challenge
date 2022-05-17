@@ -9,7 +9,7 @@ uppercase vowels.
 
 
 def count_the_vowels(word: str) -> int:
-    return len({w for w in word if w in 'aeiou'})
+    return len({w for w in word.lower() if w in 'aeiou'})
 
 
 print(count_the_vowels('saas'))

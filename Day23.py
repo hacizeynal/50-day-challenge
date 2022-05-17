@@ -12,8 +12,10 @@ def get_operation_done():
     while True:
         try:
             values1 = float(input('Enter first value:'))
+            operation = input("Enter value to for operation:\n + For add\n - For\
+            subtract\n * For multiply\n / For Divide\n . To Exit\n")
             values2 = float(input('Enter second value:'))
-            operation = input("Enter value to for operation:\n + For add\n - For subtract\n * For multiply\n / For Divide\n . To Exit\n")
+           
             if operation == '+':
                 print(f'{values1} + {values2} = {values1+values2}')
             elif operation == '-':

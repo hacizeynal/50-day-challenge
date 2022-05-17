@@ -53,7 +53,7 @@ def age_in_minutes():
     birth_year = int(input("Enter your birth year: "))
     while not is_valid_birth_year(birth_year):
         birth_year = int(input("\nEnter valid birth year again: "))
-    age_in_min = "{:,}".format((date.today().year - birth_year)*365*24*60, ",d")
+    age_in_min = f"{(date.today().year - birth_year)*365*24*60:,}"
 
     return f'Your are {age_in_min} minutes old.'
 
