@@ -8,8 +8,10 @@ word. If the word entered by the user is correctly spelled the function should r
 the correct word. Use the module textblob.
 from textblob import Word
 '''
-
+from textblob import Word
 # step 0 make a function called spelling_checker
+
+
 def spelling_checker():
     while True:
         # step 1 ask user input
